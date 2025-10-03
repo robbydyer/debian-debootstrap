@@ -9,7 +9,7 @@ jobs:
         QEMU_VER: [v7.2.0-1]
         DOCKER_REPO: [docker.io/robbydyer/debian-debootstrap]
         VERSION: [bullseye, bookworm, trixie]
-        UNAME_ARCH: [x86_64, arm64, armel, armv7l ]
+        UNAME_ARCH: [x86_64, arm64, armv7l ]
         include:
           - {ARCH: amd64,     QEMU_ARCH: x86_64,  UNAME_ARCH: x86_64}
           - {ARCH: arm64,     QEMU_ARCH: aarch64, UNAME_ARCH: arm64}
