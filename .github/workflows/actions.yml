@@ -13,7 +13,6 @@ jobs:
         include:
           - {ARCH: amd64,     QEMU_ARCH: x86_64,  UNAME_ARCH: x86_64}
           - {ARCH: arm64,     QEMU_ARCH: aarch64, UNAME_ARCH: arm64}
-          - {ARCH: armel,     QEMU_ARCH: armeb,   UNAME_ARCH: armel}
           - {ARCH: armhf,     QEMU_ARCH: arm,     UNAME_ARCH: armv7l}
     steps:
       - uses: actions/checkout@v2
